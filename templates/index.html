@@ -1,0 +1,77 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Clientes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        form {
+            max-width: 400px;
+        }
+        label, input {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .mensagem {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function enviarFormulario(event) {
+            event.preventDefault();
+            const form = event.target;
+            const formData = new FormData(form);
+            fetch('/register', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json().then(data => ({status: response.status, body: data})))
+            .then(result => {
+                const mensagem = document.getElementById('mensagem');
+                if (result.status === 200) {
+                    mensagem.style.color = 'green';
+                } else {
+                    mensagem.style.color = 'red';
+                }
+                mensagem.textContent = result.body.message;
+                form.reset();
+            })
+            .catch(error => {
+                const mensagem = document.getElementById('mensagem');
+                mensagem.style.color = 'red';
+                mensagem.textContent = 'Erro ao enviar o formulário.';
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Cadastro de Clientes</h1>
+    <form onsubmit="enviarFormulario(event)">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone" required>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <div id="mensagem" class="mensagem"></div>
+</body>
+</html>

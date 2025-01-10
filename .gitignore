@@ -1,0 +1,27 @@
+# Ignore arquivos de ambiente virtual Python
+venv/
+*.pyc
+__pycache__/
+
+# Ignore arquivos de configuração do MySQL ou senhas
+*.db
+*.sql
+
+# Ignore arquivos de logs e depuração
+*.log
+
+# Ignore arquivos temporários do sistema
+.DS_Store
+Thumbs.db
+
+# Ignore configurações específicas de IDEs e editores
+.idea/
+.vscode/
+
+# Ignore arquivos e diretórios gerados pelo JMeter
+jmeter/results/
+jmeter/*.jtl
+
+# Ignore relatórios gerados pelos testes
+*.csv
+*.xlsx
