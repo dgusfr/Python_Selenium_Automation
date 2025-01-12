@@ -5,6 +5,8 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group Cadastro">
@@ -18,7 +20,7 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding"></stringProp>
           <stringProp name="filename">C:/Projects/Python_Selenium_Automation/jmeter/dados.csv</stringProp>
@@ -30,7 +32,7 @@
           <stringProp name="variableNames">nome,email,telefone</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults">
+        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
           <stringProp name="HTTPSampler.domain">127.0.0.1</stringProp>
           <stringProp name="HTTPSampler.port">5000</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -40,7 +42,7 @@
           <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
         </ConfigTestElement>
         <hashTree/>
-        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Content-Type">
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Content-Type" enabled="true">
           <collectionProp name="HeaderManager.headers">
             <elementProp name="" elementType="Header">
               <stringProp name="Header.name"></stringProp>
@@ -50,7 +52,7 @@
           <stringProp name="TestPlan.comments">application/x-www-form-urlencoded</stringProp>
         </HeaderManager>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Requisição de Cadastro">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Requisição de Cadastro" enabled="true">
           <stringProp name="HTTPSampler.path">/register</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -68,7 +70,7 @@
           </elementProp>
         </HTTPSamplerProxy>
         <hashTree/>
-        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report">
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -105,7 +107,7 @@
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
