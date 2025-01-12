@@ -3,9 +3,8 @@ from flask_mysqldb import MySQL
 
 app = Flask(__name__)
 
-# Configurações do MySQL
 app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'       # Substitua pelo seu usuário MySQL
+app.config['MYSQL_USER'] = 'root'       
 app.config['MYSQL_PASSWORD'] = ''       # Substitua pela sua senha MySQL
 app.config['MYSQL_DB'] = 'cadastro_db'
 
