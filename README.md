@@ -34,6 +34,10 @@ Este projeto consiste em uma aplicação web simples que permite:
 - Testar o desempenho da aplicação utilizando o Apache JMeter para simulações de carga.
 - Gerar relatórios detalhados de latência, throughput e taxa de erros.
 
+<div align="center">
+  <img src="img/logo.png" alt="Imagem do Projeto" width="100">
+</div>
+
 ## Funcionalidades
 
 - Formulário web para cadastro de clientes.
@@ -64,6 +68,10 @@ Este projeto consiste em uma aplicação web simples que permite:
 
 - **Faker**: Utilizado para gerar dados fictícios realistas.
 - **JMeter**: Ferramenta para simulação de carga e coleta de métricas.
+
+<div align="center">
+  <img src="img/logo.png" alt="Imagem do Projeto" width="100">
+</div>
 
 ## Explicação
 
