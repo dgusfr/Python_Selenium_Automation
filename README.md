@@ -25,7 +25,7 @@ Este projeto é uma demonstração completa de um sistema para realizar cadastro
 
 ## Status
 
-![Em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge)
+![Concluído](http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge
 
 ## Descrição
 
