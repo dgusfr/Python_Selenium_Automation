@@ -111,5 +111,3 @@ O projeto utiliza o seguinte fluxo:
 
 Desenvolvido por Diego Franco.
 
-Se tiver dúvidas ou sugestões, fique à vontade para entrar em contato!
-
