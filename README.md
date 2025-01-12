@@ -70,7 +70,7 @@ Este projeto consiste em uma aplicação web simples que permite:
 - **JMeter**: Ferramenta para simulação de carga e coleta de métricas.
 
 <div align="center">
-  <img src="img/logo.png" alt="Imagem do Projeto" width="100">
+  <img src="images/logo.png" alt="Imagem do Projeto" width="900">
 </div>
 
 ## Explicação
