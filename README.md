@@ -35,7 +35,7 @@ Este projeto consiste em uma aplicação web simples que permite:
 - Gerar relatórios detalhados de latência, throughput e taxa de erros.
 
 <div align="center">
-  <img src="img/logo.png" alt="Imagem do Projeto" width="100">
+  <img src="images/logo.png" alt="Imagem do Projeto" width="900">
 </div>
 
 ## Funcionalidades
@@ -68,10 +68,6 @@ Este projeto consiste em uma aplicação web simples que permite:
 
 - **Faker**: Utilizado para gerar dados fictícios realistas.
 - **JMeter**: Ferramenta para simulação de carga e coleta de métricas.
-
-<div align="center">
-  <img src="images/logo.png" alt="Imagem do Projeto" width="900">
-</div>
 
 ## Explicação
 
