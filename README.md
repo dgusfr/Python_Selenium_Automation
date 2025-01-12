@@ -16,7 +16,7 @@ Este projeto é uma demonstração completa de um sistema para realizar cadastro
 
 <div style="display: flex; flex-direction: row;">
   <div style="margin-right: 20px; display: flex; justify-content: flex-start;">
-    <img src="img/python.png" alt="Python" width="100"/>
+    <img src="iamges/python.png" alt="Python" width="100"/>
   </div>
   <div style="margin-right: 20px; display: flex; justify-content: flex-start;">
     <img src="img/flask.png" alt="Flask" width="100"/>
